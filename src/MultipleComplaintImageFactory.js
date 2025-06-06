@@ -602,8 +602,11 @@ class Drawing extends Component {
         width={this.props.parentImageSize}
         height={this.props.parentImageSize}
         onMouseDown={this.handleMouseDown}
+        onTouchStart={this.handleMouseDown}
         onMouseUp={this.handleMouseUp}
+        onTouchEnd={this.handleMouseUp}
         onMouseMove={this.handleMouseMove}
+        onTouchMove={this.handleMouseMove}
         onMouseLeave={this.handleMouseUp}
       />
     );
